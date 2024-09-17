@@ -10,4 +10,5 @@ CREDENTIALS_BASE64=some_string_here
 ```
 3. Make a blank commit, and push it to GitHub.
 
-variables added
+- variables added
+- Updated variables after failed workflow
