@@ -12,3 +12,4 @@ CREDENTIALS_BASE64=some_string_here
 
 - variables added
 - Updated variables after failed workflow
+- Event Sourcing secrets update
