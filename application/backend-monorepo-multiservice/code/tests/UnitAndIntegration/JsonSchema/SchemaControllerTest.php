@@ -7,7 +7,7 @@ namespace Tests\Galeas\Api\UnitAndIntegration\JsonSchema;
 use PHPUnit\Framework\Assert;
 use Tests\Galeas\Api\UnitAndIntegration\ControllerIntegrationTest;
 
-class SchemaControllerTestAndReactor extends ControllerIntegrationTest
+class SchemaControllerTest extends ControllerIntegrationTest
 {
     public function testSchemaList(): void
     {
@@ -52,6 +52,7 @@ class SchemaControllerTestAndReactor extends ControllerIntegrationTest
                 )
             );
 
+            // Commenting this out while we sort out the way to find this class in ControllerExceptionSchemaSchemaGenerator
             $errorSchemaPath = str_replace('http://localhost', '', $routeData->schema->error);
             $pathAndParameterString = explode('?', $errorSchemaPath);
             $response = $this->requestGet(
